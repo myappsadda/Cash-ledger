@@ -1,12 +1,11 @@
-const CACHE_NAME = 'cash-ledger-v1';
+const CACHE_NAME = 'cash-ledger-v2';
 const ASSETS = [
-  './',
-  './cash-ledger.html',
-  './manifest.webmanifest',
-  './icon-192.png',
-  './icon-512.png'
+  '/Cash-ledger/',
+  '/Cash-ledger/index.html',
+  '/Cash-ledger/manifest.webmanifest',
+  '/Cash-ledger/icon-192.png',
+  '/Cash-ledger/icon-512.png'
 ];
-
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS))
