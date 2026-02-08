@@ -1,7 +1,7 @@
 {
   "name": "Cash Ledger",
   "short_name": "Ledger",
-  "start_url": "/Cash-ledger/cash-ledger.html",
+  "start_url": "./cash-ledger.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0b74de",
