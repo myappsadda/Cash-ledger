@@ -932,7 +932,9 @@ function deletePendingItem(id){
     // Register service worker for PWA
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('service-worker.js').catch(function(e){ console.log('SW reg failed', e); });
+        navigator.serviceWorker.register('/Cash-ledger/service-worker.js', {
+  scope: '/Cash-ledger/'
+});.catch(function(e){ console.log('SW reg failed', e); });
       });
     }
   </script>
